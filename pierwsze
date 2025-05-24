@@ -34,7 +34,7 @@ plt.figure(figsize=(5,5))
 for i in range(4):
     plt.subplot(2,2,i+1)
     plt.imshow(x_test[i].reshape(28,28), cmap='gray')
-    plt.title(f"Label: {np.argmax(y_test[i])}")
+    plt.title(f"Label: {argmax(y_test[i])}")
 plt.show()
 plt.figure(figsize=(12,4))
 plt.subplot(1,2,1)
